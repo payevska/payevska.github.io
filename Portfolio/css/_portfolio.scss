@@ -1,0 +1,86 @@
+section-3 {
+	display: flex;
+} 
+
+.portfolio-wrap {
+	display: flex;
+    padding: 0;
+    margin-top: 178px;
+    margin-bottom: 166px;
+}
+
+.portfolio-left {
+	padding-right: 0;
+    padding-left: 0;    
+	&__block-portfolio {
+	    width: 169%;
+	    margin-left: -215px;
+        padding-top: 210px;
+	    padding-left: 75px;
+	    padding-right: 75px;
+        padding-bottom: 179px;
+		background-color: #d6af18;
+		&_topic {			
+    		padding-bottom: 68px;
+		}
+		&_text-portfolio {
+		    padding-bottom: 35px;
+		}
+		&_link-portfolio {
+
+		}
+	}
+
+}
+
+.portfolio-right {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 52px;
+	&__projeсts-portfolio {
+		display: flex;
+	    padding-left: 0;
+	    padding-right: 0;
+        
+	}
+}
+
+.project-1 {
+	
+}
+
+.project-2 {
+	margin-right: 23px;
+}
+
+.project-4, .project-5 {
+	display: none;
+}
+
+.project-box {
+    width: 100vw;
+    height: 40vh;
+    background-color: #d6af18;
+    margin-right: -154px;
+    margin-left: 67px;
+}
+
+.fotoProject {
+
+}
+
+.three-line {
+	display: none;
+}
+
+.two-line {
+	margin-top: 42px;
+}
+
+.fon-portfolio {
+	@extend .fon;
+    width: 85%;          
+    right: 0;
+    height: 79vh;
+    margin-top: 277px;    
+}

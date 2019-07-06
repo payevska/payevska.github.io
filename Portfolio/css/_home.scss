@@ -1,0 +1,86 @@
+section-1 {
+	background: url('../images/home-bg.png') no-repeat top fixed;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	background-size: cover;
+}
+
+.home-part-top {
+	display: flex;
+    margin-top: 350px;
+    margin-bottom: 145px;
+}
+
+.home-part-bottom{
+	width: 100%;
+	background-color: $purpur;
+}
+
+.bottom-bg {
+	
+	&_scroll-arrow {
+
+	}
+}
+
+
+.main {
+	padding: 0;
+	&__block-topic {
+
+	}	
+	&__button-home {
+		display: flex;		
+		@extend button;
+		&_btn {
+			padding: 20px 69px;
+		}
+	}
+}
+
+.topic-main {
+	@extend h1;
+}
+
+.topic-text {
+	padding-top: 18px;
+	margin-bottom: 71px;
+	@extend h3;
+}
+
+/* --------- bottom-bg start -------- */
+.bottom-bg {
+	display: flex;
+	&__scroll-arrow {
+		display: flex;
+    	justify-content: center;	
+	}
+	&__social {
+		display: flex;
+		justify-content: flex-end;
+	    padding: 0;
+		&_social-veb {
+			width: 58%;
+			display: flex;
+			justify-content: space-between;
+		    align-items: center;
+		    margin-top: 4px;
+		}
+	}
+}
+
+i {
+	color: #ffffff;	
+	@extend a;
+	font-size: 1.6em;			
+}
+
+#scroll-home {
+    display: flex;
+    flex-direction: column;   
+	margin: 30px 0 30px;
+} 
+
+/* --------- bottom-bg finish -------- */
