@@ -1,3 +1,4 @@
+/* ------------ about --------------- */
 section-2 {    
     background: url('../images/skills-bg.png') no-repeat bottom;
 	width: 100%;
@@ -142,3 +143,23 @@ section-2 {
 	}
 }
 
+/* ------ media query ------ */
+@include desktop {
+
+}
+
+@include laptop {
+	
+}
+
+@include tablet {
+	
+}
+
+@include phone {
+	
+}
+
+@include iphone {
+	
+}

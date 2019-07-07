@@ -18,6 +18,7 @@
   src: url("fonts/NunitoSans/NunitoSans-Regular.eot") format("embedded-opentype"), url("fonts/NunitoSans/NunitoSans-Regular.woff2") format("woff2"), url("fonts/NunitoSans/NunitoSans-Regular.woff") format("woff"), url("fonts/NunitoSans/NunitoSans-Regular.ttf") format("truetype"), url("fonts/NunitoSans/NunitoSans-Regular.svg#PT_SansWebBold") format("svg");
   font-style: normal;
   font-weight: 400; }
+/* ------------ variable --------------- */
 body {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
@@ -104,6 +105,7 @@ input::placeholder {
   opacity: 0.5;
   margin-left: 27px; }
 
+/* ------------ header --------------- */
 header {
   width: 100%;
   position: fixed;
@@ -229,6 +231,8 @@ header {
   display: block; }
 
 /* gambyrger-menu finish*/
+/* ------ media query ------ */
+/* ------------ home --------------- */
 section-1 {
   background: url("../images/home-bg.png") no-repeat top fixed;
   width: 100%;
@@ -284,6 +288,8 @@ i {
   margin: 30px 0 30px; }
 
 /* --------- bottom-bg finish -------- */
+/* ------ media query ------ */
+/* ------------ about --------------- */
 section-2 {
   background: url("../images/skills-bg.png") no-repeat bottom;
   width: 100%;
@@ -394,21 +400,28 @@ section-2 {
     font-weight: 400;
     color: #ffffff; }
 
+/* ------ media query ------ */
+/* ------------ portfolio --------------- */
 section-3 {
-  display: flex; }
+  display: flex;
+  position: relative;
+  margin-top: 178px; }
 
 .portfolio-wrap {
   display: flex;
   padding: 0;
-  margin-top: 178px;
   margin-bottom: 166px; }
 
 .portfolio-left {
+  position: absolute;
+  z-index: -1;
+  width: 31vw;
+  height: 81vh;
+  display: flex;
   padding-right: 0;
   padding-left: 0; }
   .portfolio-left__block-portfolio {
-    width: 169%;
-    margin-left: -215px;
+    width: 128%;
     padding-top: 210px;
     padding-left: 75px;
     padding-right: 75px;
@@ -422,43 +435,54 @@ section-3 {
 .portfolio-right {
   padding-left: 0;
   padding-right: 0;
-  margin-left: 52px; }
+  margin-left: 52px;
+  margin-bottom: 166px; }
   .portfolio-right__projeсts-portfolio {
     display: flex;
     padding-left: 0;
     padding-right: 0; }
 
 .project-2 {
-  margin-right: 23px; }
+  margin-right: 20px; }
 
-.project-4, .project-5 {
-  display: none; }
+.project-4 {
+  margin-right: 20px; }
 
 .project-box {
-  width: 100vw;
+  width: 14vw;
   height: 40vh;
   background-color: #d6af18;
-  margin-right: -154px;
-  margin-left: 67px; }
+  margin-left: 67px;
+  position: absolute;
+  right: 0;
+  z-index: -1; }
+
+.one-line {
+  padding-left: 98px; }
 
 .three-line {
+  margin-top: 42px;
+  padding-left: 98px;
   display: none; }
 
 .two-line {
+  padding-left: 98px;
   margin-top: 42px; }
 
 .fon-portfolio {
+  z-index: -2;
   width: 85%;
   right: 0;
-  height: 79vh;
-  margin-top: 277px; }
+  height: 77vh;
+  margin-top: 97px; }
 
+/* ------ media query ------ */
+/* ------------ blog --------------- */
 section-4 {
   display: flex;
   padding-bottom: 100px; }
 
 .myBlog-title {
-  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -524,7 +548,9 @@ section-4 {
   margin-bottom: 100px;
   left: 0; }
 
-section-5 {
+/* ------ media query ------ */
+/* ------------ footer --------------- */
+footer {
   display: flex;
   position: relative;
   background-color: #431c43; }
@@ -695,6 +721,7 @@ section-5 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   bottom: 104px; }
 
+/* ------ media query ------ */
 /* -------- fonts -------- */
 /* -------- colors -------- */
 /* -------- variables -------- */

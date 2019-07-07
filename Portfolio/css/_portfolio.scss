@@ -1,25 +1,33 @@
+/* ------------ portfolio --------------- */
 section-3 {
 	display: flex;
+	position: relative;
+	margin-top: 178px;
 } 
 
 .portfolio-wrap {
 	display: flex;
     padding: 0;
-    margin-top: 178px;
+    
     margin-bottom: 166px;
 }
 
 .portfolio-left {
+	position: absolute;
+    z-index: -1;
+    width: 31vw;
+    height: 81vh;
+    display: flex;
 	padding-right: 0;
     padding-left: 0;    
 	&__block-portfolio {
-	    width: 169%;
-	    margin-left: -215px;
-        padding-top: 210px;
-	    padding-left: 75px;
-	    padding-right: 75px;
-        padding-bottom: 179px;
-		background-color: #d6af18;
+	    width: 128%;
+		
+		padding-top: 210px;
+		padding-left: 75px;
+		padding-right: 75px;
+		padding-bottom: 179px;
+		background-color: $yellow;		
 		&_topic {			
     		padding-bottom: 68px;
 		}
@@ -37,6 +45,8 @@ section-3 {
     padding-left: 0;
     padding-right: 0;
     margin-left: 52px;
+    
+    margin-bottom: 166px;
 	&__projeсts-portfolio {
 		display: flex;
 	    padding-left: 0;
@@ -50,37 +60,68 @@ section-3 {
 }
 
 .project-2 {
-	margin-right: 23px;
+	margin-right: 20px;
 }
 
-.project-4, .project-5 {
-	display: none;
+.project-4 {
+	margin-right: 20px;
 }
 
 .project-box {
-    width: 100vw;
+    width: 14vw;
     height: 40vh;
-    background-color: #d6af18;
-    margin-right: -154px;
+    background-color: $yellow;
     margin-left: 67px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
 }
 
 .fotoProject {
 
 }
 
+.one-line {
+	padding-left: 98px;	
+}
+
 .three-line {
+	margin-top: 42px;
+	padding-left: 98px;
 	display: none;
 }
 
 .two-line {
+	padding-left: 98px;
 	margin-top: 42px;
 }
 
 .fon-portfolio {
 	@extend .fon;
+	z-index: -2;
     width: 85%;          
     right: 0;
-    height: 79vh;
-    margin-top: 277px;    
+    height: 77vh;
+    margin-top: 97px;    
+}
+
+/* ------ media query ------ */
+@include desktop {
+
+}
+
+@include laptop {
+	
+}
+
+@include tablet {
+	
+}
+
+@include phone {
+	
+}
+
+@include iphone {
+	
 }

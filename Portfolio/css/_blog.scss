@@ -1,10 +1,10 @@
+/* ------------ blog --------------- */
 section-4 {
 	display: flex;
     padding-bottom: 100px;
 }
 
 .myBlog-title {
-	width: 60%;
 	display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,3 +96,23 @@ section-4 {
     left: 0;
 }
 
+/* ------ media query ------ */
+@include desktop {
+
+}
+
+@include laptop {
+    
+}
+
+@include tablet {
+    
+}
+
+@include phone {
+    
+}
+
+@include iphone {
+    
+}

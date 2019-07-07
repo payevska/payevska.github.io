@@ -1,4 +1,5 @@
-section-5 {
+/* ------------ footer --------------- */
+footer {
 	display: flex;
     position: relative;
 	background-color: $purpur;
@@ -223,5 +224,23 @@ section-5 {
     bottom: 104px;
 }
 
+/* ------ media query ------ */
+@include desktop {
 
+}
 
+@include laptop {
+	
+}
+
+@include tablet {
+	
+}
+
+@include phone {
+	
+}
+
+@include iphone {
+	
+}
