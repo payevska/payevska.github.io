@@ -1,10 +1,15 @@
 /* ------------ home --------------- */
 section-1 {
+	display: flex;
+    flex-direction: column;
+}
+
+.home-wrap {
 	background: url('../images/home-bg.png') no-repeat top fixed;
 	width: 100%;
-	height: auto;
+	min-height: 92vh;
 	display: flex;
-	flex-direction: column;
+	
 	background-size: cover;
 }
 
@@ -14,20 +19,10 @@ section-1 {
     margin-bottom: 145px;
 }
 
-.home-part-bottom{
-	width: 100%;
-	background-color: $purpur;
-}
-
-.bottom-bg {
-	
-	&_scroll-arrow {
-
-	}
-}
-
-
 .main {
+	display: flex;
+    flex-direction: column;
+    align-items: start;
 	padding: 0;
 	&__block-topic {
 
@@ -52,15 +47,19 @@ section-1 {
 }
 
 /* --------- bottom-bg start -------- */
-.bottom-bg {
+.home-part-bottom {
 	display: flex;
+	background-color: $purpur;
 	&__scroll-arrow {
+		width: 52%;
 		display: flex;
-    	justify-content: center;	
+    	justify-content: flex-end;	
 	}
 	&__social {
+		width: 34%;
 		display: flex;
 		justify-content: flex-end;
+	    align-items: center;
 	    padding: 0;
 		&_social-veb {
 			width: 58%;

@@ -234,11 +234,14 @@ header {
 /* ------ media query ------ */
 /* ------------ home --------------- */
 section-1 {
+  display: flex;
+  flex-direction: column; }
+
+.home-wrap {
   background: url("../images/home-bg.png") no-repeat top fixed;
   width: 100%;
-  height: auto;
+  min-height: 92vh;
   display: flex;
-  flex-direction: column;
   background-size: cover; }
 
 .home-part-top {
@@ -246,11 +249,10 @@ section-1 {
   margin-top: 350px;
   margin-bottom: 145px; }
 
-.home-part-bottom {
-  width: 100%;
-  background-color: #431c43; }
-
 .main {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   padding: 0; }
   .main__button-home {
     display: flex; }
@@ -262,16 +264,20 @@ section-1 {
   margin-bottom: 71px; }
 
 /* --------- bottom-bg start -------- */
-.bottom-bg {
-  display: flex; }
-  .bottom-bg__scroll-arrow {
+.home-part-bottom {
+  display: flex;
+  background-color: #431c43; }
+  .home-part-bottom__scroll-arrow {
+    width: 52%;
     display: flex;
-    justify-content: center; }
-  .bottom-bg__social {
+    justify-content: flex-end; }
+  .home-part-bottom__social {
+    width: 34%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding: 0; }
-    .bottom-bg__social_social-veb {
+    .home-part-bottom__social_social-veb {
       width: 58%;
       display: flex;
       justify-content: space-between;
