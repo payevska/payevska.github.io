@@ -120,11 +120,12 @@ section-2 {
 
 .block-bottom {	
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
+	padding: 0;
 	&__topic-skills {
 	    display: flex;
 	    justify-content: center;
-	    margin-top: 60px;
+	    padding-top: 56px;
 	    margin-bottom: 52px;
 		@extend h2;
 		color: $white;
@@ -133,7 +134,7 @@ section-2 {
 	&__skills {
 		display: flex;
 	    justify-content: space-between;
-	    margin-bottom: 72px;
+	    padding-bottom: 72px;
 		font: {
 			family: 'Archivo Narrow', sans-serif;
 			size: 34px;

@@ -87,10 +87,10 @@ footer {
 	    	color: $white;
 	    	margin-bottom: 8px;
 	    }
-	    &_social-veb {
+	    &_social-web {
+	    	@extend .social-web;
 		    width: 28%;
-		    display: flex;
-		    justify-content: space-between;
+		    
 	    }
 	}
 	&__menu-footer {

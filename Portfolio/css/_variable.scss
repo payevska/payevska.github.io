@@ -115,6 +115,11 @@ input::placeholder  {
 	margin-left: 27px;	
 }
 
+.social-web {	
+    display: flex;
+    justify-content: space-between;
+}
+
 @mixin desktop {
   @media (min-width: 1200px) {
     @content;

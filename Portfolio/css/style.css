@@ -105,6 +105,10 @@ input::placeholder {
   opacity: 0.5;
   margin-left: 27px; }
 
+.social-web, .home-part-bottom__social_social-web, .footer-wrap__footer-contact_social-web {
+  display: flex;
+  justify-content: space-between; }
+
 /* ------------ header --------------- */
 header {
   width: 100%;
@@ -116,7 +120,8 @@ header {
 
 .header-wrap {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 0; }
 
 .header-big {
   display: flex;
@@ -244,15 +249,12 @@ section-1 {
   display: flex;
   background-size: cover; }
 
-.home-part-top {
-  display: flex;
-  margin-top: 350px;
-  margin-bottom: 145px; }
-
 .main {
   display: flex;
   flex-direction: column;
   align-items: start;
+  margin-top: 350px;
+  margin-bottom: 145px;
   padding: 0; }
   .main__button-home {
     display: flex; }
@@ -277,12 +279,8 @@ section-1 {
     justify-content: flex-end;
     align-items: center;
     padding: 0; }
-    .home-part-bottom__social_social-veb {
-      width: 58%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 4px; }
+    .home-part-bottom__social_social-web {
+      width: 20%; }
 
 i {
   color: #ffffff;
@@ -389,18 +387,19 @@ section-2 {
 
 .block-bottom {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 0; }
   .block-bottom__topic-skills {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    padding-top: 56px;
     margin-bottom: 52px;
     color: #ffffff;
     font-size: 60px; }
   .block-bottom__skills {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 34px;
     font-weight: 400;
@@ -621,10 +620,8 @@ footer {
     .footer-wrap__footer-contact_topic-social {
       color: #ffffff;
       margin-bottom: 8px; }
-    .footer-wrap__footer-contact_social-veb {
-      width: 28%;
-      display: flex;
-      justify-content: space-between; }
+    .footer-wrap__footer-contact_social-web {
+      width: 28%; }
   .footer-wrap__menu-footer {
     display: flex;
     flex-direction: column;
