@@ -17,15 +17,21 @@ section-3 {
     justify-content: center;
     background-color: #d6af18;
     width: 45%;
-    margin-right: 67px;
-    /* height: 80vh; */
+    margin-right: 67px;    
 }
 
 .portfolio-info {    
     width: 70%;
-    padding-top: 210px;		
+    padding-top: 210px;	
+	@media (min-width: 1200px) and (max-width: 1475px) {
+	    padding-top: 30px;
+	}	
 	&__topic {			
 		padding-bottom: 68px;
+		@media (min-width: 1200px) and (max-width: 1475px) {
+	    padding-bottom: 22px;
+	}
+
 	}
 	&__text-portfolio {
 	    padding-bottom: 35px;
@@ -49,11 +55,28 @@ section-3 {
 }
 
 .project-1 {
-	
+	img {
+		@media (min-width: 1200px) and (max-width: 1475px) {
+    	    width: 90%;
+    	}
+	}
 }
 
 .project-2 {
 	margin-right: 20px;
+	img {
+		@media (min-width: 1200px) and (max-width: 1475px) {
+    	    width: 90%;
+    	}
+	}
+}
+
+.project-3 {	
+	img {
+		@media (min-width: 1200px) and (max-width: 1475px) {
+    	    width: 90%;
+    	}
+	}
 }
 
 .project-4 {
@@ -61,9 +84,11 @@ section-3 {
 }
 
 .project-box {
-    width: 22%;
-    /* height: 40vh; */
-    background-color: $yellow;    
+    width: 22%;    
+    background-color: $yellow; 
+    @media (min-width: 1200px) and (max-width: 1475px) {
+    	    width: 42%;
+	}   
 }
 
 .fotoProject {
@@ -100,7 +125,59 @@ section-3 {
 }
 
 @include laptop {
-	
+	.portfolio {
+		flex-direction: column;
+		align-items: center;
+		background-color: $yellow;
+	}
+	.portfolio-left {
+		justify-content: start;
+    	margin-right: 0;
+    	width: 81%;    
+	}
+	.portfolio-info {     
+    	padding-top: 30px;
+        width: 66%;			
+		&__topic {			
+			padding-bottom: 20px;
+		}
+		&__text-portfolio {
+		    
+		}
+		&__link-portfolio {
+			display: none;
+		}
+	}
+	.portfolio-right {      
+		&__projeсts-portfolio {
+			justify-content: center;
+		    margin-bottom: 32px;			      
+		}
+	}
+	.project-box {
+        display: none;
+	}
+	.project-1 {
+		display: flex;
+    	width: 100%;
+    	img {		
+    	    width: 100%;
+    	}
+    }
+    .project-2 {
+		img {		
+    	    width: 100%;
+    	}
+    }
+    .project-3 {
+		img {		
+    	    width: 100%;
+    	}
+    }
+    .fon-portfolio {	
+        top: -60px;
+    	height: 110%;    
+	}		
 }
 
 @include tablet {
