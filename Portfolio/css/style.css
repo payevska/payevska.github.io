@@ -297,15 +297,16 @@ i {
 /* ------ media query ------ */
 /* ------------ about --------------- */
 section-2 {
-  background: url("../images/skills-bg.png") no-repeat bottom;
-  width: 100%;
-  height: auto;
+  /* background: url('../images/skills-bg.png') no-repeat bottom; */
   display: flex;
-  background-size: contain; }
+  flex-direction: column;
+  position: relative; }
 
 .fon-about {
   width: 35%;
-  left: 0; }
+  left: 0;
+  height: 100%;
+  top: 0; }
 
 .about-wrap {
   display: flex;
@@ -386,6 +387,13 @@ section-2 {
   width: 100%;
   height: 54%;
   border: 2px solid #5d565d; }
+
+.bl {
+  background: url("../images/skills-bg.png") no-repeat;
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-size: cover; }
 
 .block-bottom {
   display: flex;
