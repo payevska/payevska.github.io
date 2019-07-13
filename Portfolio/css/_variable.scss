@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-	padding: 0;
+	/* padding: 0; */
 }
 
 
@@ -120,8 +120,14 @@ input::placeholder  {
     justify-content: space-between;
 }
 
+@mixin television {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
+
 @mixin desktop {
-  @media (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 1599.98px) {
     @content;
   }
 }

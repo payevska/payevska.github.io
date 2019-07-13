@@ -42,24 +42,26 @@ section-1 {
 }
 
 /* --------- bottom-bg start -------- */
-.home-part-bottom {
+.home-scrol {
 	display: flex;
 	background-color: $purpur;
-	&__scroll-arrow {
-		width: 52%;
+}
+
+.home-part-bottom {    
+    display: flex;
+    padding: 0;    	
+	&__scroll-arrow {		
 		display: flex;
     	justify-content: flex-end;	
 	}
-	&__social {
-		width: 34%;
+	&__social {		
 		display: flex;
 		justify-content: flex-end;
 	    align-items: center;
-	    padding: 0;
+	    padding: 0;	    
 		&_social-web {
 			@extend .social-web;
 		    width: 20%;
-		    
     	}
 	}
 }
@@ -79,12 +81,36 @@ i {
 
 
 /* ------ media query ------ */
-@include desktop {
+@include television {
 
 }
 
+@include desktop {
+	.home-part-bottom {	
+		&__scroll-arrow {
+							
+		}
+		&__social {
+					    
+			&_social-web {				
+			    
+	    	}
+		}
+	}
+}
+
 @include laptop {
-	
+	.home-part-bottom {	
+		&__scroll-arrow {
+						
+		}
+		&__social {
+					    
+			&_social-web {				
+			    
+	    	}
+		}
+	}
 }
 
 @include tablet {

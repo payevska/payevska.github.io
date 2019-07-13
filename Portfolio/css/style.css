@@ -26,7 +26,7 @@ body {
   color: #312a31; }
 
 .container {
-  padding: 0; }
+  /* padding: 0; */ }
 
 a, button a, .main__button-home a, .about-block-right__button-about a, .form-contact__form-content_form-submit a, .button-up__circle-wrap_circle-box a, .header-big__logotype a, .header-big__menu_link-group a, .gambyrger-menu__gambyrger-list_link-group a, i, .about-block-right__text-about_span-about, .block-blog__info-blog_link1-blog, .block-blog__info-blog_link2-blog, .block-blog__info-blog_link3-blog, .footer-wrap__footer-contact_footer-email a, .footer-wrap__menu-footer_vertical-menu_link-group a {
   font-family: 'Nunito Sans', sans-serif;
@@ -266,15 +266,17 @@ section-1 {
   margin-bottom: 71px; }
 
 /* --------- bottom-bg start -------- */
-.home-part-bottom {
+.home-scrol {
   display: flex;
   background-color: #431c43; }
+
+.home-part-bottom {
+  display: flex;
+  padding: 0; }
   .home-part-bottom__scroll-arrow {
-    width: 52%;
     display: flex;
     justify-content: flex-end; }
   .home-part-bottom__social {
-    width: 34%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -410,40 +412,36 @@ section-2 {
 section-3 {
   display: flex;
   position: relative;
-  margin-top: 178px; }
-
-.portfolio-wrap {
-  display: flex;
-  padding: 0;
+  margin-top: 178px;
   margin-bottom: 166px; }
 
+.portfolio {
+  display: flex; }
+
 .portfolio-left {
-  position: absolute;
-  z-index: -1;
-  width: 31vw;
-  height: 81vh;
   display: flex;
-  padding-right: 0;
-  padding-left: 0; }
-  .portfolio-left__block-portfolio {
-    width: 128%;
-    padding-top: 210px;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-bottom: 179px;
-    background-color: #d6af18; }
-    .portfolio-left__block-portfolio_topic {
-      padding-bottom: 68px; }
-    .portfolio-left__block-portfolio_text-portfolio {
-      padding-bottom: 35px; }
+  justify-content: center;
+  background-color: #d6af18;
+  width: 45%;
+  margin-right: 67px;
+  /* height: 80vh; */ }
+
+.portfolio-info {
+  width: 70%;
+  padding-top: 210px; }
+  .portfolio-info__topic {
+    padding-bottom: 68px; }
+  .portfolio-info__text-portfolio {
+    padding-bottom: 35px; }
 
 .portfolio-right {
   padding-left: 0;
   padding-right: 0;
-  margin-left: 52px;
-  margin-bottom: 166px; }
+  margin-right: 0;
+  margin-left: 0; }
   .portfolio-right__projeсts-portfolio {
     display: flex;
+    justify-content: space-between;
     padding-left: 0;
     padding-right: 0; }
 
@@ -454,37 +452,34 @@ section-3 {
   margin-right: 20px; }
 
 .project-box {
-  width: 14vw;
-  height: 40vh;
-  background-color: #d6af18;
-  margin-left: 67px;
-  position: absolute;
-  right: 0;
-  z-index: -1; }
+  width: 22%;
+  /* height: 40vh; */
+  background-color: #d6af18; }
 
 .one-line {
-  padding-left: 98px; }
+  /* padding-left: 98px; */ }
 
 .three-line {
-  margin-top: 42px;
-  padding-left: 98px;
+  margin-top: 32px;
+  /* padding-left: 98px; */
   display: none; }
 
 .two-line {
-  padding-left: 98px;
-  margin-top: 42px; }
+  /* padding-left: 98px; */
+  margin-top: 32px; }
 
 .fon-portfolio {
   z-index: -2;
-  width: 85%;
+  width: 83%;
   right: 0;
-  height: 77vh;
-  margin-top: 97px; }
+  top: 100px;
+  height: 96%; }
 
 /* ------ media query ------ */
 /* ------------ blog --------------- */
 section-4 {
   display: flex;
+  flex-direction: column;
   padding-bottom: 100px; }
 
 .myBlog-title {
@@ -502,7 +497,7 @@ section-4 {
 
 .myBlog-wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 0;
   padding-right: 0; }
 
@@ -516,7 +511,7 @@ section-4 {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    padding: 22px 37px 45px 37px; }
+    padding: 22px 37px 70px 37px; }
     .block-blog__info-blog_topic-info {
       display: flex;
       justify-content: start;
@@ -533,24 +528,21 @@ section-4 {
   display: none; }
 
 .blog-left {
-  margin-left: -146px;
   margin-right: 30px; }
 
 .blog-center {
   margin: 80px 30px 0 30px; }
 
+.blog-right {
+  margin-left: 30px; }
+
 .fotoBlog-center, .info-center {
   box-shadow: 0px 0px 80.36px 1.64px rgba(43, 46, 102, 0.2); }
-
-.blog-right {
-  margin-right: -94px;
-  margin-left: 30px; }
 
 .fon-blog {
   background-color: #fafafd;
   width: 100%;
-  height: 96vh;
-  margin-bottom: 100px;
+  height: 94%;
   left: 0; }
 
 /* ------ media query ------ */
@@ -693,7 +685,7 @@ footer {
 .button-up {
   position: absolute;
   z-index: 3;
-  right: 215px;
+  right: 221px;
   top: 466px; }
   .button-up__circle-wrap_circle-box {
     width: 50px;

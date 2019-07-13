@@ -3,55 +3,48 @@ section-3 {
 	display: flex;
 	position: relative;
 	margin-top: 178px;
+    margin-bottom: 166px;
 } 
 
-.portfolio-wrap {
+
+
+.portfolio {
 	display: flex;
-    padding: 0;
-    
-    margin-bottom: 166px;
 }
 
 .portfolio-left {
-	position: absolute;
-    z-index: -1;
-    width: 31vw;
-    height: 81vh;
-    display: flex;
-	padding-right: 0;
-    padding-left: 0;    
-	&__block-portfolio {
-	    width: 128%;
-		
-		padding-top: 210px;
-		padding-left: 75px;
-		padding-right: 75px;
-		padding-bottom: 179px;
-		background-color: $yellow;		
-		&_topic {			
-    		padding-bottom: 68px;
-		}
-		&_text-portfolio {
-		    padding-bottom: 35px;
-		}
-		&_link-portfolio {
+	display: flex;
+    justify-content: center;
+    background-color: #d6af18;
+    width: 45%;
+    margin-right: 67px;
+    /* height: 80vh; */
+}
 
-		}
+.portfolio-info {    
+    width: 70%;
+    padding-top: 210px;		
+	&__topic {			
+		padding-bottom: 68px;
 	}
+	&__text-portfolio {
+	    padding-bottom: 35px;
+	}
+	&__link-portfolio {
 
+	}
 }
 
 .portfolio-right {
     padding-left: 0;
     padding-right: 0;
-    margin-left: 52px;
-    
-    margin-bottom: 166px;
+    margin-right: 0;
+    margin-left: 0;     
 	&__projeсts-portfolio {
-		display: flex;
+		display: flex;		
+    	justify-content: space-between;
 	    padding-left: 0;
-	    padding-right: 0;
-        
+	    padding-right: 0;        
 	}
 }
 
@@ -68,13 +61,9 @@ section-3 {
 }
 
 .project-box {
-    width: 14vw;
-    height: 40vh;
-    background-color: $yellow;
-    margin-left: 67px;
-    position: absolute;
-    right: 0;
-    z-index: -1;
+    width: 22%;
+    /* height: 40vh; */
+    background-color: $yellow;    
 }
 
 .fotoProject {
@@ -82,27 +71,27 @@ section-3 {
 }
 
 .one-line {
-	padding-left: 98px;	
+	/* padding-left: 98px; */	
 }
 
 .three-line {
-	margin-top: 42px;
-	padding-left: 98px;
+	margin-top: 32px;
+	/* padding-left: 98px; */
 	display: none;
 }
 
 .two-line {
-	padding-left: 98px;
-	margin-top: 42px;
+	/* padding-left: 98px; */
+	margin-top: 32px;
 }
 
 .fon-portfolio {
 	@extend .fon;
-	z-index: -2;
-    width: 85%;          
+    z-index: -2;
+    width: 83%;
     right: 0;
-    height: 77vh;
-    margin-top: 97px;    
+    top: 100px;
+    height: 96%;    
 }
 
 /* ------ media query ------ */
